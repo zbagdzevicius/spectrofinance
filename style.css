@@ -1,0 +1,49 @@
+body {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  background-image: linear-gradient(to bottom, skyblue, white);
+}
+
+.ground {
+    height: 30vh;
+    width: 100vw;
+    bottom: 0;
+    position:absolute;
+    background-size: 5vw;
+    background-position: top left;
+}
+
+.mario {
+    width: 8vw;
+    height: 8vw;
+    max-width: 12vh;
+    max-height: 12vh;
+    bottom: 30vh;
+    left: 0vw;
+    position:absolute;
+    background-size: cover;
+    animation-fill-mode: forwards;
+    animation-name: mario;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+
+.castle {
+    width: 30vw;
+    height: 35vw;
+    max-width: 60vh;
+    max-height: 70vh;
+    bottom: 30vh;
+    right:  5vw;
+    position:absolute;
+    background-size: 100%;
+    background-size: cover;
+    background-position: bottom;
+}
+
+@keyframes mario{
+    to{
+        transform: translateX(55vw);
+    }
+  }
